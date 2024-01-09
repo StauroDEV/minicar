@@ -1,0 +1,40 @@
+{
+  "name": "@stauro/minicar",
+  "version": "0.0.0",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --config eslint.config.js",
+    "prepublishOnly": "pnpm lint && pnpm build"
+  },
+  "keywords": ["ipfs", "car"],
+  "author": "v1rtl",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.7",
+    "bun-types": "^1.0.21",
+    "typescript": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "globals": "^13.23.0",
+    "@eslint/js": "^8.54.0",
+    "@stylistic/eslint-plugin": "^1.4.1"
+  },
+  "dependencies": {
+    "@ipld/unixfs": "^2.1.2",
+    "cborg": "^4.0.6",
+    "multiformats": "^13.0.0"
+  },
+  "files": ["dist"],
+  "engines": {
+    "node": ">=16"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "Node16",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node16",
+    "outDir": "dist",
+    "isolatedModules": true,
+    "declaration": true,
+    "types": ["bun-types"]
+  },
+  "exclude": ["node_modules", "**/node_modules/*"],
+  "include": ["src"],
+}
