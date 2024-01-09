@@ -20,7 +20,7 @@ import { CID } from 'multiformats/cid'
 import { TransformStream } from 'node:stream/web'
 import { Block } from '@ipld/unixfs'
 import { Writable } from 'node:stream'
-import { createDirectoryEncoderStream, CAREncoderStream, updateRootsInFile } from 'minicar'
+import { createDirectoryEncoderStream, CAREncoderStream, updateRootsInFile } from '@stauro/minicar'
 
 const output = `${dir}/${name}.car`
 
@@ -54,7 +54,7 @@ const blob = new Blob([file], { type: 'application/vnd.ipld.car' })
 ### Parsing a UCAN proof
 
 ```ts
-import { CarReader } from 'minicar'
+import { CarReader } from '@stauro/minicar'
 
 async function parseProof(data: string) {
   const blocks = []
