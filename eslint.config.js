@@ -30,6 +30,7 @@ export default [
       ...ts.configs['recommended'].rules,
       '@stylistic/max-len': ['error', { code: 120 }],
       'no-var': 'error',
+      'no-undef': 'off',
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }], // not working
     },
   },

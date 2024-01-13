@@ -1,5 +1,2 @@
-export { createDirectoryEncoderStream } from './unixfs.js'
-export { updateRootsInFile } from './writer.js'
-export { CarReader } from './reader.js'
-export { CAREncoderStream } from './car.js'
-export * from './types.js'
+export * from './write.js'
+export * from '@ipld/car'
